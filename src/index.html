@@ -1,285 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gym landing page</title>
-    <link rel="stylesheet" href="./styles/css/main.css">
-    <script src="https://kit.fontawesome.com/d20e710e26.js" crossorigin="anonymous"></script>
-    <script type='module' src='./scripts/main.js'></script>    
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/d20e710e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
     <nav class="nav">
-        <a href="" class="nav__logo">
-            <img src="./images/logo.png" alt="" class="nav__logo-img">
-        </a>
+      <a href="" class="nav__logo">
+        <img src="./images/logo.png" alt="" class="nav__logo-img" />
+      </a>
 
-        <!-- Mobile menu -->
-        <i class="fas fa-bars nav__bars"></i>
-        <div class="nav__mobile-background"></div>
-        <div class="nav__mobile-dropdown">
-            <div class="nav__mobile-dropdown-top">
-                <h2>MENU</h2>
-                <i class="fas fa-times nav__mobile-dropdown-close"></i>
-            </div>
-            <ul class="nav__mobile-menu">
-                <li class="nav__mobile-menu-item active"><a href=''> HOME </a></li>
-                <li class="nav__mobile-menu-item"><a href=''> ABOUT US </a></li>
-                <li class="nav__mobile-menu-item"><a href=''> SCHEDULE </a></li>
-                <li class="nav__mobile-menu-item"><a href=''> PRICING </a></li>
-                <li class="nav__mobile-menu-item"><a href=''> CONTACT </a></li>
-            </ul>
-            <hr class="nav__mobile-divider">
-            <ul class="nav__mobile-social">
-                <li class="nav__mobile-social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </li>
-                <li class="nav__mobile-social-icon">
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li class="nav__mobile-social-icon">
-                    <i class="fab fa-youtube"></i>
-                </li>
-            </ul>
+      <!-- Mobile menu -->
+      <i class="fas fa-bars nav__bars"></i>
+      <div class="nav__mobile-background"></div>
+      <div class="nav__mobile-dropdown">
+        <div class="nav__mobile-dropdown-top">
+          <h2>MENU</h2>
+          <i class="fas fa-times nav__mobile-dropdown-close"></i>
         </div>
+        <ul class="nav__mobile-menu">
+          <li class="nav__mobile-menu-item active"><a href=""> HOME </a></li>
+          <li class="nav__mobile-menu-item">
+            <a href="#about-section"> ABOUT US </a>
+          </li>
+          <li class="nav__mobile-menu-item">
+            <a href="#schedule-section"> SCHEDULE </a>
+          </li>
+          <li class="nav__mobile-menu-item">
+            <a href="#pricing-section"> PRICING </a>
+          </li>
+          <li class="nav__mobile-menu-item">
+            <a href="#contact-section"> CONTACT </a>
+          </li>
+        </ul>
+        <hr class="nav__mobile-divider" />
+        <ul class="nav__mobile-social">
+          <li class="nav__mobile-social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </li>
+          <li class="nav__mobile-social-icon">
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li class="nav__mobile-social-icon">
+            <i class="fab fa-youtube"></i>
+          </li>
+        </ul>
+      </div>
 
-        <!-- Desktop menu -->
-        <ul class="nav__menu">
-            <li class="nav__menu-item active"><a href=''> HOME </a></li>
-            <li class="nav__menu-item"><a href=''> ABOUT US </a></li>
-            <li class="nav__menu-item"><a href=''> SCHEDULE </a></li>
-            <li class="nav__menu-item"><a href=''> PRICING </a></li>
-            <li class="nav__menu-item"><a href=''> CONTACT </a></li>
-        </ul>
-        <ul class="nav__social">
-            <li class="nav__social-icon">
-                <i class="fab fa-facebook-f"></i>
-            </li>
-            <li class="nav__social-icon">
-                <i class="fab fa-instagram"></i>
-            </li>
-            <li class="nav__social-icon">
-                <i class="fab fa-youtube"></i>
-            </li>
-        </ul>
+      <!-- Desktop menu -->
+      <ul class="nav__menu">
+        <li class="nav__menu-item active"><a href=""> HOME </a></li>
+        <li class="nav__menu-item"><a href="#about-section"> ABOUT US </a></li>
+        <li class="nav__menu-item">
+          <a href="#schedule-section"> SCHEDULE </a>
+        </li>
+        <li class="nav__menu-item"><a href="#pricing-section"> PRICING </a></li>
+        <li class="nav__menu-item"><a href="#contact-section"> CONTACT </a></li>
+      </ul>
+      <ul class="nav__social">
+        <li class="nav__social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </li>
+        <li class="nav__social-icon">
+          <i class="fab fa-instagram"></i>
+        </li>
+        <li class="nav__social-icon">
+          <i class="fab fa-youtube"></i>
+        </li>
+      </ul>
     </nav>
     <main class="landing">
-        <div class="landing__text">
-            <p class="landing__text-top">CHANGE YOURSELF</p>
-            <p class="landing__text-main">YOU ARE BUILT</p>
-            <p class="landing__text-main">TO BE EPIC</p>
-            <button class="landing__cta-btn btn">GET INFO</button>
-        </div>
+      <div class="landing__text">
+        <p class="landing__text-top">CHANGE YOURSELF</p>
+        <p class="landing__text-main">YOU ARE BUILT</p>
+        <p class="landing__text-main">TO BE EPIC</p>
+        <button class="landing__cta-btn btn">GET INFO</button>
+      </div>
     </main>
-    <section class="why-us">
-        <p class="why-us__text-secondary">Why choose us?</p>
-        <h2 class="why-us__text-main">We will guide you to a better you</h2>
-        <ul class="why-us__advantages">
-            <li class="why-us__advantage">
-                <i class="fas fa-dumbbell why-us__advantage-icon"></i>
-                <h3 class="why-us__advantage-title">Advantage</h3>
-                <p class="why-us__advantage-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.
-                </p>
-            </li>
-            <li class="why-us__advantage">
-                <i class="fas fa-apple-alt why-us__advantage-icon"></i>
-                <h3 class="why-us__advantage-title">Advantage</h3>
-                <p class="why-us__advantage-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.
-                </p>
-            </li>
-            <li class="why-us__advantage">
-                <i class="fas fa-heartbeat why-us__advantage-icon"></i>
-                <h3 class="why-us__advantage-title">Advantage</h3>
-                <p class="why-us__advantage-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.
-                </p>
-            </li>
-            <li class="why-us__advantage">
-                <i class="fas fa-running why-us__advantage-icon"></i>
-                <h3 class="why-us__advantage-title">Advantage</h3>
-                <p class="why-us__advantage-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.
-                </p>
-            </li>
-        </ul>
+    <section class="why-us" id="about-section">
+      <p class="why-us__text-secondary">Why choose us?</p>
+      <h2 class="why-us__text-main">We will guide you to a better you</h2>
+      <ul class="why-us__advantages">
+        <li class="why-us__advantage">
+          <i class="fas fa-dumbbell why-us__advantage-icon"></i>
+          <h3 class="why-us__advantage-title">Advantage</h3>
+          <p class="why-us__advantage-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </li>
+        <li class="why-us__advantage">
+          <i class="fas fa-apple-alt why-us__advantage-icon"></i>
+          <h3 class="why-us__advantage-title">Advantage</h3>
+          <p class="why-us__advantage-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </li>
+        <li class="why-us__advantage">
+          <i class="fas fa-heartbeat why-us__advantage-icon"></i>
+          <h3 class="why-us__advantage-title">Advantage</h3>
+          <p class="why-us__advantage-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </li>
+        <li class="why-us__advantage">
+          <i class="fas fa-running why-us__advantage-icon"></i>
+          <h3 class="why-us__advantage-title">Advantage</h3>
+          <p class="why-us__advantage-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <section class="our-offer">
-        <h3 class="our-offer__text-secondary">Our offer</h3>
-        <h2 class="our-offer__text-main">There is something for everyone</h2>
-        <ul class="our-offer__classes">
-            <li class="our-offer__class">
-                <img src="./images/offer/crossfit.jpg" alt="" class="our-offer__img">
-                <div class="our-offer__class-bottom">
-                    <p class="our-offer__class-name">Crossfit</p>
-                    <button class="our-offer__cta-btn">More</button>                    
-                </div>
-            </li>
+    <section class="our-offer" id="schedule-section">
+      <h3 class="our-offer__text-secondary">Our offer</h3>
+      <h2 class="our-offer__text-main">There is something for everyone</h2>
+      <ul class="our-offer__classes">
+        <li class="our-offer__class">
+          <img
+            src="./images/offer/crossfit.jpg"
+            alt=""
+            class="our-offer__img"
+          />
+          <div class="our-offer__class-bottom">
+            <p class="our-offer__class-name">Crossfit</p>
+            <button class="our-offer__cta-btn">More</button>
+          </div>
+        </li>
 
-            <li class="our-offer__class">
-                <img src="./images/offer/weightlifting.jpg" alt="" class="our-offer__img">
-                <div class="our-offer__class-bottom">
-                    <p class="our-offer__class-name">Weightlifting</p>
-                    <button class="our-offer__cta-btn">More</button>                    
-                </div>
-            </li>
+        <li class="our-offer__class">
+          <img
+            src="./images/offer/weightlifting.jpg"
+            alt=""
+            class="our-offer__img"
+          />
+          <div class="our-offer__class-bottom">
+            <p class="our-offer__class-name">Weightlifting</p>
+            <button class="our-offer__cta-btn">More</button>
+          </div>
+        </li>
 
-            <li class="our-offer__class">
-                <img src="./images/offer/bikes2.jpg" alt="" class="our-offer__img">
-                <div class="our-offer__class-bottom">
-                    <p class="our-offer__class-name">Indoor cycling</p>
-                    <button class="our-offer__cta-btn">More</button>                    
-                </div>
-            </li>
+        <li class="our-offer__class">
+          <img src="./images/offer/bikes2.jpg" alt="" class="our-offer__img" />
+          <div class="our-offer__class-bottom">
+            <p class="our-offer__class-name">Indoor cycling</p>
+            <button class="our-offer__cta-btn">More</button>
+          </div>
+        </li>
 
-            <li class="our-offer__class">
-                <img src="./images/offer/fitness.jpg" alt="" class="our-offer__img">
-                <div class="our-offer__class-bottom">
-                    <p class="our-offer__class-name">Fitness</p>
-                    <button class="our-offer__cta-btn">More</button>                    
-                </div>
-            </li>
-        </ul>
+        <li class="our-offer__class">
+          <img src="./images/offer/fitness.jpg" alt="" class="our-offer__img" />
+          <div class="our-offer__class-bottom">
+            <p class="our-offer__class-name">Fitness</p>
+            <button class="our-offer__cta-btn">More</button>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="join-us">
-        <h2 class="join-us__main"> We are waiting for you</h2>
-        <p class="join-us__secondary"> Buy a pass online and join us</p>
-        <button class="join-us__cta-btn">Buy pass</button>
+      <h2 class="join-us__main">We are waiting for you</h2>
+      <p class="join-us__secondary">Buy a pass online and join us</p>
+      <button class="join-us__cta-btn">Buy pass</button>
     </section>
 
-    <section class="pricing">
-        <h3 class="pricing__text-secondary">Pricing</h3>
-        <h2 class="pricing__text-main">Affordable prices tailored to you</h2>
-        <ul class="pricing__list">
-            <li class="pricing__offer">
-                <h2 class="pricing__offer-name">Morning</h2>
-                <p class="pricing__offer-price">$39</p>
-                <p class="pricing__offer-duration">1 month</p>
-                <ul class="pricing__offer-benefits">
-                    <li class="pricing__offer-benefit">Unlimited access before 12:00 </li>
-                    <li class="pricing__offer-benefit">All classes</li>
-                    <li class="pricing__offer-benefit">Personal trainer</li>
-                    <li class="pricing__offer-benefit">Free protein shake</li>
-                </ul>
-
-                <button class="pricing__cta-btn">Start now</button>
+    <section class="pricing" id="pricing-section">
+      <h3 class="pricing__text-secondary">Pricing</h3>
+      <h2 class="pricing__text-main">Affordable prices tailored to you</h2>
+      <ul class="pricing__list">
+        <li class="pricing__offer">
+          <h2 class="pricing__offer-name">Morning</h2>
+          <p class="pricing__offer-price">$39</p>
+          <p class="pricing__offer-duration">1 month</p>
+          <ul class="pricing__offer-benefits">
+            <li class="pricing__offer-benefit">
+              Unlimited access before 12:00
             </li>
+            <li class="pricing__offer-benefit">All classes</li>
+            <li class="pricing__offer-benefit">Personal trainer</li>
+            <li class="pricing__offer-benefit">Free protein shake</li>
+          </ul>
 
-            <li class="pricing__offer--reccomended">
-                <h2 class="pricing__offer-name">Basic</h2>
-                <p class="pricing__offer-price">$49</p>
-                <p class="pricing__offer-duration">1 month</p>
-                <ul class="pricing__offer-benefits">
-                    <li class="pricing__offer-benefit">Unlimited access </li>
-                    <li class="pricing__offer-benefit">All classes</li>
-                    <li class="pricing__offer-benefit">Personal trainer</li>
-                    <li class="pricing__offer-benefit">Free protein shake</li>
-                </ul>
+          <button class="pricing__cta-btn">Start now</button>
+        </li>
 
-                <button class="pricing__cta-btn">Start now</button>
-            </li>
+        <li class="pricing__offer--reccomended">
+          <h2 class="pricing__offer-name">Basic</h2>
+          <p class="pricing__offer-price">$49</p>
+          <p class="pricing__offer-duration">1 month</p>
+          <ul class="pricing__offer-benefits">
+            <li class="pricing__offer-benefit">Unlimited access</li>
+            <li class="pricing__offer-benefit">All classes</li>
+            <li class="pricing__offer-benefit">Personal trainer</li>
+            <li class="pricing__offer-benefit">Free protein shake</li>
+          </ul>
 
-            <li class="pricing__offer">
-                <h2 class="pricing__offer-name">Quarter</h2>
-                <p class="pricing__offer-price">$109</p>
-                <p class="pricing__offer-duration">3 month</p>
-                <ul class="pricing__offer-benefits">
-                    <li class="pricing__offer-benefit">Unlimited access</li>
-                    <li class="pricing__offer-benefit">All classes</li>
-                    <li class="pricing__offer-benefit">Personal trainer</li>
-                    <li class="pricing__offer-benefit">Free protein shake</li>
-                </ul>
-                <button class="pricing__cta-btn">Start now</button>
-            </li>
+          <button class="pricing__cta-btn">Start now</button>
+        </li>
 
-            <li class="pricing__offer">
-                <h2 class="pricing__offer-name">Full year</h2>
-                <p class="pricing__offer-price">$499</p>
-                <p class="pricing__offer-duration">12 month</p>
-                <ul class="pricing__offer-benefits">
-                    <li class="pricing__offer-benefit">Unlimited access</li>
-                    <li class="pricing__offer-benefit">All classes</li>
-                    <li class="pricing__offer-benefit">Personal trainer</li>
-                    <li class="pricing__offer-benefit">Free protein shake</li>
-                </ul>
-                <button class="pricing__cta-btn">Start now</button>
-            </li>
-        </ul>
+        <li class="pricing__offer">
+          <h2 class="pricing__offer-name">Quarter</h2>
+          <p class="pricing__offer-price">$109</p>
+          <p class="pricing__offer-duration">3 month</p>
+          <ul class="pricing__offer-benefits">
+            <li class="pricing__offer-benefit">Unlimited access</li>
+            <li class="pricing__offer-benefit">All classes</li>
+            <li class="pricing__offer-benefit">Personal trainer</li>
+            <li class="pricing__offer-benefit">Free protein shake</li>
+          </ul>
+          <button class="pricing__cta-btn">Start now</button>
+        </li>
+
+        <li class="pricing__offer">
+          <h2 class="pricing__offer-name">Full year</h2>
+          <p class="pricing__offer-price">$499</p>
+          <p class="pricing__offer-duration">12 month</p>
+          <ul class="pricing__offer-benefits">
+            <li class="pricing__offer-benefit">Unlimited access</li>
+            <li class="pricing__offer-benefit">All classes</li>
+            <li class="pricing__offer-benefit">Personal trainer</li>
+            <li class="pricing__offer-benefit">Free protein shake</li>
+          </ul>
+          <button class="pricing__cta-btn">Start now</button>
+        </li>
+      </ul>
     </section>
 
     <section class="gallery">
-        <img src="./images/gallery/1.jpg" alt="" class="gallery__photo">
-        <img src="./images/gallery/4.jpg" alt="" class="gallery__photo">
-        <img src="./images/gallery/3.jpg" alt="" class="gallery__photo">
-        <img src="./images/gallery/6.jpg" alt="" class="gallery__photo">
-        <img src="./images/gallery/7.jpg" alt="" class="gallery__photo">
+      <img src="./images/gallery/1.jpg" alt="" class="gallery__photo" />
+      <img src="./images/gallery/4.jpg" alt="" class="gallery__photo" />
+      <img src="./images/gallery/3.jpg" alt="" class="gallery__photo" />
+      <img src="./images/gallery/6.jpg" alt="" class="gallery__photo" />
+      <img src="./images/gallery/7.jpg" alt="" class="gallery__photo" />
 
-        <div class="modal" id='modal'>
-            <img class="modal__image">
-        </div>
+      <div class="modal" id="modal">
+        <img class="modal__image" />
+      </div>
     </section>
 
-    <section class="location">
-        <h3 class="location__text-secondary">Location</h3>
-        <h2 class="location__text-main">Where to find us?</h2>
-        <div class="gmap_canvas">
-            <iframe class="location__map" id="gmap_canvas" src="https://maps.google.com/maps?q=400-410%20N%20Crest%20Dr%20Los%20Angeles&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <section class="location" id="contact-section">
+      <h3 class="location__text-secondary">Location</h3>
+      <h2 class="location__text-main">Where to find us?</h2>
+
+      <div class="contact__container">
+        <div class="footer__contact">
+          <h4 class="footer__contact-title">Contact</h4>
+          <p class="footer__contact-item">Street: 572 Rocky Ave</p>
+          <p class="footer__contact-item">City: Los Angeles</p>
+          <p class="footer__contact-item">State: California</p>
+          <p class="footer__contact-item">Phone: 123 456 789</p>
+          <p class="footer__contact-item">Email: epicgym@gmail.com</p>
         </div>
+        <div class="gmap_canvas">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3941.836252852933!2d77.4525726845222!3d8.894811557336176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTMnMzkuMCJOIDc3wrAyNycxNC4yIkU!5e0!3m2!1sen!2sin!4v1715879200576!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__hours">
-                <h4 class="footer__hours-title">Opening hours</h4>
-                <ul class="footer__hours-list">
-                    <li class="footer__hour">Monday: 6:00 - 22:00</li>
-                    <li class="footer__hour">Tuesday: 6:00 - 22:00</li>
-                    <li class="footer__hour">Wedensday: 6:00 - 22:00</li>
-                    <li class="footer__hour">Thursday: 6:00 - 22:00</li>
-                    <li class="footer__hour">Friday: 6:00 - 23:00</li>
-                    <li class="footer__hour">Saturday: 7:00 - 23:00</li>
-                    <li class="footer__hour">Sunday: 7:00 - 15:00</li>
-                </ul>
-            </div>
-            <div class="footer__contact">
-                <h4 class="footer__contact-title">Contact</h4>
-                <p class="footer__contact-item">Company name: EpicGym LLC.</p>
-                <p class="footer__contact-item">Street: 572 Rocky Ave</p>
-                <p class="footer__contact-item">City: Los Angeles</p>
-                <p class="footer__contact-item">State: California</p>
-                <p class="footer__contact-item">Phone: 123 456 789</p>
-                <p class="footer__contact-item">Email: epicgym@gmail.com</p>
-            </div>
-            <div class="footer__newsletter">
-                <h4 class="footer__newsletter-title">Newsletter</h4>
-                <input type="email" class="footer__newsletter-input" placeholder="Your email address">
-                <button class="footer__newsletter-submit-btn">Sign up</button>
-                <ul class="footer__social">
-                    <li class="footer__social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </li>
-                    <li class="footer__social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                    <li class="footer__social-icon">
-                        <i class="fab fa-youtube"></i>
-                    </li>
-                </ul>
-            </div>      
-            
-            <hr class="footer__divider">
-
-            <p class="footer__bottom">Copyright &copy; 2021 Mateusz Penkala</p>
+      <div class="footer__wrapper">
+        <div class="footer__hours">
+          <h4 class="footer__hours-title">Opening hours</h4>
+          <ul class="footer__hours-list">
+            <li class="footer__hour">Monday: 6:00 - 22:00</li>
+            <li class="footer__hour">Tuesday: 6:00 - 22:00</li>
+            <li class="footer__hour">Wedensday: 6:00 - 22:00</li>
+            <li class="footer__hour">Thursday: 6:00 - 22:00</li>
+            <li class="footer__hour">Friday: 6:00 - 23:00</li>
+            <li class="footer__hour">Saturday: 7:00 - 23:00</li>
+            <li class="footer__hour">Sunday: 7:00 - 15:00</li>
+          </ul>
         </div>
 
+        <div class="footer__newsletter">
+          <h4 class="footer__newsletter-title">Newsletter</h4>
+          <input
+            type="email"
+            class="footer__newsletter-input"
+            placeholder="Your email address"
+          />
+          <button class="footer__newsletter-submit-btn">Sign up</button>
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li class="footer__social-icon">
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li class="footer__social-icon">
+              <i class="fab fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+
+        <hr class="footer__divider" />
+
+        <p class="footer__bottom">Copyright &copy; 2021 Mateusz Penkala</p>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+  />
 </html>

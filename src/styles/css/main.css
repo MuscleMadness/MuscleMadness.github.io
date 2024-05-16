@@ -579,7 +579,18 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
-.footer__contact, .footer__hours {
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact, .gmap_canvas {
+  width: 50%;
+  flex: 1;
+}
+
+.footer__hours {
   flex: 1 0 250px;
   display: flex;
   flex-direction: column;
