@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gym landing page</title>
+    <title>Muscle Madness</title>
     <link rel="stylesheet" href="./styles/css/main.css" />
     <script
       src="https://kit.fontawesome.com/d20e710e26.js"
@@ -15,7 +16,12 @@
   <body>
     <nav class="nav">
       <a href="" class="nav__logo">
-        <img src="./images/logo.png" alt="" class="nav__logo-img" />
+        <img
+          src="./images/gym-logo.svg"
+          alt=""
+          height="50px"
+          class="nav__logo-img"
+        />
       </a>
 
       <!-- Mobile menu -->
@@ -29,14 +35,14 @@
         <ul class="nav__mobile-menu">
           <li class="nav__mobile-menu-item active"><a href=""> HOME </a></li>
           <li class="nav__mobile-menu-item">
-            <a href="#about-section"> ABOUT US </a>
+            <a href="#why-us-section"> WHY US </a>
           </li>
           <li class="nav__mobile-menu-item">
-            <a href="#schedule-section"> SCHEDULE </a>
+            <a href="#services-section"> SERVICES </a>
           </li>
-          <li class="nav__mobile-menu-item">
+          <!-- <li class="nav__mobile-menu-item">
             <a href="#pricing-section"> PRICING </a>
-          </li>
+          </li> -->
           <li class="nav__mobile-menu-item">
             <a href="#contact-section"> CONTACT </a>
           </li>
@@ -58,11 +64,11 @@
       <!-- Desktop menu -->
       <ul class="nav__menu">
         <li class="nav__menu-item active"><a href=""> HOME </a></li>
-        <li class="nav__menu-item"><a href="#about-section"> ABOUT US </a></li>
+        <li class="nav__menu-item"><a href="#why-us-section"> WHY US </a></li>
         <li class="nav__menu-item">
-          <a href="#schedule-section"> SCHEDULE </a>
+          <a href="#services-section"> SERVICES </a>
         </li>
-        <li class="nav__menu-item"><a href="#pricing-section"> PRICING </a></li>
+        <!-- <li class="nav__menu-item"><a href="#pricing-section"> PRICING </a></li> -->
         <li class="nav__menu-item"><a href="#contact-section"> CONTACT </a></li>
       </ul>
       <ul class="nav__social">
@@ -80,51 +86,59 @@
     <main class="landing">
       <div class="landing__text">
         <p class="landing__text-top">CHANGE YOURSELF</p>
-        <p class="landing__text-main">YOU ARE BUILT</p>
-        <p class="landing__text-main">TO BE EPIC</p>
-        <button class="landing__cta-btn btn">GET INFO</button>
+        <p class="landing__text-main">Transform Your Life</p>
+        <p class="landing__text-main">One Workout at a Time</p>
+        <button class="landing__cta-btn btn">Join Now</button>
       </div>
     </main>
-    <section class="why-us" id="about-section">
+    <section class="why-us" id="why-us-section">
       <p class="why-us__text-secondary">Why choose us?</p>
       <h2 class="why-us__text-main">We will guide you to a better you</h2>
       <ul class="why-us__advantages">
         <li class="why-us__advantage">
           <i class="fas fa-dumbbell why-us__advantage-icon"></i>
-          <h3 class="why-us__advantage-title">Advantage</h3>
+          <h3 class="why-us__advantage-title">Strength Training</h3>
           <p class="why-us__advantage-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut dolore facilisis.
+            Our gym offers a wide range of free weights, resistance machines,
+            and functional training equipment. Whether you're a beginner or
+            advanced, our certified trainers provide personalized plans to help
+            you build muscle and boost strength safely.
           </p>
         </li>
         <li class="why-us__advantage">
           <i class="fas fa-apple-alt why-us__advantage-icon"></i>
-          <h3 class="why-us__advantage-title">Advantage</h3>
+          <h3 class="why-us__advantage-title">Fitness Classes</h3>
           <p class="why-us__advantage-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut dolore facilisis.
+            Join our diverse fitness classes, including yoga, HIIT, and spin,
+            designed to keep you motivated and fit. Led by experienced
+            instructors, our classes cater to all levels, ensuring a fun and
+            effective workout every time.
           </p>
         </li>
         <li class="why-us__advantage">
           <i class="fas fa-heartbeat why-us__advantage-icon"></i>
-          <h3 class="why-us__advantage-title">Advantage</h3>
+          <h3 class="why-us__advantage-title">Diet Suggestions</h3>
           <p class="why-us__advantage-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut dolore facilisis.
+            Our nutrition experts provide personalized diet suggestions to
+            complement your workout routine. Whether your goal is weight loss,
+            muscle gain, or overall health, we offer tailored advice to help you
+            achieve optimal results.
           </p>
         </li>
         <li class="why-us__advantage">
           <i class="fas fa-running why-us__advantage-icon"></i>
-          <h3 class="why-us__advantage-title">Advantage</h3>
+          <h3 class="why-us__advantage-title">Cardio Workouts</h3>
           <p class="why-us__advantage-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut dolore facilisis.
+            Enhance your cardiovascular fitness with our extensive cardio
+            equipment, including treadmills, bikes, and ellipticals. Our
+            trainers can create customized cardio routines to improve endurance,
+            burn calories, and support heart health.
           </p>
         </li>
       </ul>
     </section>
 
-    <section class="our-offer" id="schedule-section">
+    <section class="our-offer" id="services-section">
       <h3 class="our-offer__text-secondary">Our offer</h3>
       <h2 class="our-offer__text-main">There is something for everyone</h2>
       <ul class="our-offer__classes">
@@ -170,13 +184,13 @@
       </ul>
     </section>
 
-    <section class="join-us">
+    <!-- <section class="join-us">
       <h2 class="join-us__main">We are waiting for you</h2>
       <p class="join-us__secondary">Buy a pass online and join us</p>
       <button class="join-us__cta-btn">Buy pass</button>
-    </section>
+    </section> -->
 
-    <section class="pricing" id="pricing-section">
+    <!-- <section class="pricing" id="pricing-section">
       <h3 class="pricing__text-secondary">Pricing</h3>
       <h2 class="pricing__text-main">Affordable prices tailored to you</h2>
       <ul class="pricing__list">
@@ -236,7 +250,7 @@
           <button class="pricing__cta-btn">Start now</button>
         </li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="gallery">
       <img src="./images/gallery/1.jpg" alt="" class="gallery__photo" />
@@ -257,11 +271,11 @@
       <div class="contact__container">
         <div class="footer__contact">
           <h4 class="footer__contact-title">Contact</h4>
-          <p class="footer__contact-item">Street: 572 Rocky Ave</p>
-          <p class="footer__contact-item">City: Los Angeles</p>
-          <p class="footer__contact-item">State: California</p>
+          <p class="footer__contact-item">Kamaraj Nagar</p>
+          <p class="footer__contact-item">Muthukrishnaperi</p>
+          <p class="footer__contact-item">Alangulam</p>
           <p class="footer__contact-item">Phone: 123 456 789</p>
-          <p class="footer__contact-item">Email: epicgym@gmail.com</p>
+          <p class="footer__contact-item">Email: muscle.madness@gmail.com</p>
         </div>
         <div class="gmap_canvas">
           <iframe
@@ -280,15 +294,10 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__hours">
-          <h4 class="footer__hours-title">Opening hours</h4>
+          <h4 class="footer__hours-title">Working hours</h4>
           <ul class="footer__hours-list">
-            <li class="footer__hour">Monday: 6:00 - 22:00</li>
-            <li class="footer__hour">Tuesday: 6:00 - 22:00</li>
-            <li class="footer__hour">Wedensday: 6:00 - 22:00</li>
-            <li class="footer__hour">Thursday: 6:00 - 22:00</li>
-            <li class="footer__hour">Friday: 6:00 - 23:00</li>
-            <li class="footer__hour">Saturday: 7:00 - 23:00</li>
-            <li class="footer__hour">Sunday: 7:00 - 15:00</li>
+            <li class="footer__hour">Monday to Saturday: 6:00 - 10:00 AM</li>
+            <li class="footer__hour">Sunday: 6:00 - 11:00 AM</li>
           </ul>
         </div>
 
@@ -315,7 +324,7 @@
 
         <hr class="footer__divider" />
 
-        <p class="footer__bottom">Copyright &copy; 2021 Mateusz Penkala</p>
+        <p class="footer__bottom">Copyright &copy; 2024 Ramaraj Thangapandi</p>
       </div>
     </footer>
   </body>
