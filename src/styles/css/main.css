@@ -175,6 +175,11 @@
   color: #c93636;
 }
 
+.social-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), right no-repeat url("../../images/landing_woman.jpg");
   background-size: cover;
@@ -201,13 +206,18 @@
   margin-bottom: 0.5rem;
   position: relative;
 }
-.landing__text-top::before {
+/* .landing__text-top::before {
   content: "";
   border-left: 2px solid #c93636;
   height: 100%;
   position: absolute;
   left: -0.5rem;
+} */
+.landing_vertial_line {
+  border-left: 8px solid #c93636;
+  padding-left: 8px;
 }
+
 .landing__text-main {
   font-size: 3rem;
   font-weight: bold;

@@ -57,6 +57,9 @@
           <li class="nav__mobile-menu-item">
             <a href="#contact-section"> CONTACT </a>
           </li>
+          <li class="nav__mobile-menu-item">
+            <a href="/workout-tracker"> WORKOUT PLANNER </a>
+          </li>
         </ul>
         <hr class="nav__mobile-divider" />
         <ul class="nav__mobile-social">
@@ -81,6 +84,9 @@
         </li>
         <!-- <li class="nav__menu-item"><a href="#pricing-section"> PRICING </a></li> -->
         <li class="nav__menu-item"><a href="#contact-section"> CONTACT </a></li>
+        <li class="nav__menu-item">
+          <a href="/workout-tracker"> WORKOUT PLANNER </a>
+        </li>
       </ul>
       <ul class="nav__social">
         <li class="nav__social-icon">
@@ -97,10 +103,21 @@
     <main class="landing">
       <div class="landing__text">
         <p class="landing__text-top">CHANGE YOURSELF</p>
-        <p class="landing__text-main">Transform Your Life</p>
+        <p class="landing_vertial_line landing__text-main">
+          Transform Your Life
+        </p>
         <p class="landing__text-main">One Workout at a Time</p>
-        <button class="landing__cta-btn btn">Join Now</button>
+        <button
+          class="landing__cta-btn btn"
+          onclick="location.href='#contact-section'"
+        >
+          Join Now
+        </button>
       </div>
+      <br />
+      <a href="/workout-tracker" class="landing__text"
+        >Try out workout planner</a
+      >
     </main>
     <section class="why-us" id="why-us-section">
       <p class="why-us__text-secondary">Why choose us?</p>
@@ -285,8 +302,18 @@
           <p class="footer__contact-item">Kamaraj Nagar</p>
           <p class="footer__contact-item">Muthukrishnaperi</p>
           <p class="footer__contact-item">Alangulam</p>
-          <p class="footer__contact-item">Phone: 123 456 789</p>
-          <p class="footer__contact-item">Email: muscle.madness@gmail.com</p>
+          <button
+            class="landing__cta-btn btn"
+            onclick="location.href='tel:123456789'"
+          >
+            Call Us
+          </button>
+          <button
+            class="landing__cta-btn btn"
+            onclick="location.href='muscle.madness@gmail.com'"
+          >
+            Email Us
+          </button>
         </div>
         <div class="gmap_canvas">
           <iframe
