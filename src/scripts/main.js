@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const socialLinks = {
-  "fa-instagram": "https://www.instagram.com/muscle.madness.25/",
-  "fa-facebook-f":
-    "https://www.facebook.com/people/Muscle-Madness/61565273034156/",
-  "fa-youtube": "https://www.youtube.com/MuscleMadness25",
-  "fa-phone-alt": "tel:123456789",
+  "fa-instagram": "http://instagram.musclemadness.co.in",
+  "fa-facebook-f": "http://facebook.musclemadness.co.in",
+  "fa-youtube": "https://www.youtube.com/@MuscleMadness25",
+  "fa-phone-alt": "tel:+917200360683",
   "fa-envelope": "mailto:muscle.madness@gmail.com",
+  "fa-map": "http://maps.musclemadness.co.in"
 };
 
 Object.keys(socialLinks).forEach((iconClass) => {
