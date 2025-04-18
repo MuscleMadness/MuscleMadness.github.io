@@ -800,3 +800,57 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
+
+.terms {
+  margin-top: 100px; /* Adjust this value as needed */
+  padding: 1rem;
+}
+
+.header {
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Optional: Add a background color */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.nav__logo img {
+  height: 50px;
+  margin: 10px; /* Add spacing around the logo */
+}
+
+.header {
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Optional: Add a background color */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.policy {
+  margin-top: 80px; /* Add space to prevent content from being hidden */
+  padding: 1rem;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.footer__links li a {
+  text-decoration: none;
+  color: #ffffff; /* Set text color to white */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer__links li a:hover {
+  color: #c93636; /* Highlight color on hover */
+}
