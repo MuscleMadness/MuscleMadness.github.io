@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Availability Sync - Google Workspace Add-on</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Google Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: #202124;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ea4335;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #d33426;
+        }
+        .features {
+            padding: 60px 0;
+            background-color: white;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .feature-icon {
+            font-size: 40px;
+            color: #4285f4;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #202124;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h3 {
+            color: #202124;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .how-it-works {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .step-number {
+            background-color: #4285f4;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .testimonials {
+            padding: 60px 0;
+            background-color: white;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .testimonial-author {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #202124;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/MuscleMadness/datasource/main/team-calender.jpeg" alt="Team Availability Sync Logo" class="logo">
+            <h1>Team Availability Sync</h1>
+            <p class="tagline">Automatically sync your Out-of-Office events to team calendars</p>
+            <a href="#" class="cta-button">Install from Google Workspace Marketplace</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Automatic Synchronization</h3>
+                    <p>Automatically syncs events with "OOO", "Out of Office", "Vacation", or "Leave" in the title or description to your team calendars.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Simple Setup</h3>
+                    <p>Works directly within Google Calendar with an intuitive setup process to select which team calendars should receive your OOO events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Manual & Automatic Sync</h3>
+                    <p>Choose between manual sync with detailed results or automatic background sync every 6 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install the Add-on</h3>
+                        <p>Install Team Availability Sync from the Google Workspace Marketplace directly to your Google Calendar.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configure Your Settings</h3>
+                        <p>Open the add-on from Google Calendar's side panel and select which team calendars should display your OOO events.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Create OOO Events</h3>
+                        <p>Create events in your personal calendar with "OOO", "Out of Office", "Vacation", or "Leave" in the title or description.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Automatic Syncing</h3>
+                        <p>The add-on automatically syncs your OOO events to selected team calendars, keeping everyone informed of your availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"This add-on has saved our team countless hours of manually updating calendars. Everyone knows when team members are out of office!"</p>
+                    <p class="testimonial-author">- Sarah T., Project Manager</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Simple but incredibly useful. We've eliminated the confusion around who's available when."</p>
+                    <p class="testimonial-author">- Michael R., Team Lead</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The automatic sync feature is fantastic - set it and forget it. Now our team calendar always reflects everyone's availability."</p>
+                    <p class="testimonial-author">- Jennifer K., HR Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:ramaraj.tt@gmail.com">Contact Us</a>
+            </div>
+            <p>&copy; 2025 Ramaraj Thangapandi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
